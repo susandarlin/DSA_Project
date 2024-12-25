@@ -1,4 +1,5 @@
 package com.ssdl.dsa.util;
+import java.util.Random;
 
 public class Util {
     
@@ -12,5 +13,17 @@ public class Util {
             }
         }        
         return true;
+    }
+    
+    public int[] createRandomArray(int size)
+    {
+        Random random = new Random();
+        int[] arr = new int[size];
+        
+        for(int i = 0; i < arr.length; i++)
+        {
+            arr[i] = random.nextInt(400);
+        }
+        return arr;
     }
 }
