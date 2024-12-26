@@ -39,4 +39,14 @@ public class SortingTest {
         sortingAlgo.sort(arr);
         assertTrue(util.isArraySorted(arr));
     }
+    
+    @Test
+    public void testBubbleSortRandomData()
+    {
+        int[] arr = util.createRandomArray(20);
+        System.out.println("Input " + util.arrayToString(arr));
+        sortingAlgo.sort(arr);
+        System.out.println("Sorted " + util.arrayToString(arr));
+        assertTrue(util.isArraySorted(arr));
+    }
 }

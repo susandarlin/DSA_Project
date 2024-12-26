@@ -26,4 +26,14 @@ public class Util {
         }
         return arr;
     }
+    
+    public String arrayToString(int[] arr)
+    {
+        StringBuffer buffer = new StringBuffer();
+        for(int i = 0; i < arr.length; i++)
+        {
+            buffer.append(arr[i] + " ,");
+        }
+        return buffer.toString();
+    }
 }
