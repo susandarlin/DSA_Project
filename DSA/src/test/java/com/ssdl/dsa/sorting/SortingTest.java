@@ -7,7 +7,9 @@ import org.junit.jupiter.api.Test;
 public class SortingTest {
 
     Util util = new Util();
-    SortingAlgorithm sortingAlgo = new BubbleSort();
+    //SortingAlgorithm sortingAlgo = new BubbleSort();
+    
+    SortingAlgorithm sortingAlgo = new InsertionSort();
 
     @Test
     public void testEmptyElement() {
