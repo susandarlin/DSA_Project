@@ -9,7 +9,9 @@ public class SortingTest {
     Util util = new Util();
     //SortingAlgorithm sortingAlgo = new BubbleSort();
     
-    SortingAlgorithm sortingAlgo = new InsertionSort();
+    //SortingAlgorithm sortingAlgo = new InsertionSort();
+    
+    SortingAlgorithm sortingAlgo = new ShellSort();
 
     @Test
     public void testEmptyElement() {
